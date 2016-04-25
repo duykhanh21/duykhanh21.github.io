@@ -1,0 +1,45 @@
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-25 09:56:45 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.1.2/lib/rails/templates/rails/welcome/index.html.erb (2.2ms)
+Completed 200 OK in 40ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-04-25 10:07:15 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.1.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/webhook" for 127.0.0.1 at 2016-04-25 10:07:21 +0700
+Processing by ApiController#webhook as HTML
+Completed 500 Internal Server Error in 53ms
+
+ActionView::MissingTemplate (Missing template api/Wrong, application/Wrong with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/duykhanh/Projects/gg_bot.github.io/app/views"
+):
+  app/controllers/api_controller.rb:6:in `webhook'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/webhook" for 127.0.0.1 at 2016-04-25 10:08:06 +0700
+Processing by ApiController#webhook as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `html' for #<ApiController:0x00000003680198>):
+  app/controllers/api_controller.rb:6:in `webhook'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+
+
+Started GET "/webhook" for 127.0.0.1 at 2016-04-25 10:08:14 +0700
+Processing by ApiController#webhook as HTML
+  Rendered html template (0.0ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
